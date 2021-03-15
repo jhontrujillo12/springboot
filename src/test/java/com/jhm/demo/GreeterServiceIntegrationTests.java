@@ -22,7 +22,7 @@ public class GreeterServiceIntegrationTests {
         String greeting = greeterService.sayHello("Jhon");
 
         // Then
-        assertThat(greeting).isEqualTo("Hello World, Duke");
+        assertThat(greeting).isEqualTo("Hello World, Jhon");
 
     }
 

@@ -1,7 +1,6 @@
 package com.jhm.demo;
 
 import com.jhm.demo.controller.GreeterService;
-import javafx.beans.binding.BooleanExpression;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,10 +17,10 @@ public class GreeterServiceIntegrationTests {
     @Test
     public void pruebaUnitariaSayHelloJhon() {
 
-        // When
+        // Se envía el parámetro al servicio con la cadena de Jhon
         String greeting = greeterService.sayHello("Jhon");
 
-        // Then
+        // Se compara el parámetro enviado con el saludo
         assertThat(greeting).isEqualTo("Hello World, Jhon");
 
     }

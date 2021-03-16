@@ -7,7 +7,7 @@ on:
   push:
     branches: [develop]
   pull_request:
-    branches: [master]
+    branches: [release]
 
 jobs:
   build:
@@ -47,6 +47,19 @@ jobs:
       env:
         MENSAJE_EXITO: Todas las pruebas fueron exitosas
       run: echo "::set-output name=respuesta::${MENSAJE_EXITO}"
+
+  createbranch:
+    needs: unittest
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: creatingbranch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'release'
 
   automerge:
     needs: unittest

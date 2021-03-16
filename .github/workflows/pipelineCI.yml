@@ -27,6 +27,8 @@ jobs:
     - name: unittest
       run: ./gradlew clean test --info
 
-  unittes:
+  unittest:
+
+    steps:
     - name: unittest
-      run: ./gradlew clean test --info
+    - run: ./gradlew clean test --info

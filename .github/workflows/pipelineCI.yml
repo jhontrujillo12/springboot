@@ -24,19 +24,15 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-    - name: unittest
-      run: ./gradlew clean test --info
 
   unittest:
 
     runs-on: ubuntu-latest
 
     steps:
-    - name: unittest
+    - name: check
       uses: actions/checkout@v2
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
     - name: unittest
       run: ./gradlew clean test --info

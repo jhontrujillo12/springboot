@@ -29,6 +29,8 @@ jobs:
 
   unittest:
 
+    runs-on: ubuntu-latest
+
     steps:
     - name: unittest
       uses: actions/checkout@v2

@@ -62,7 +62,7 @@ jobs:
           branch: 'release'
 
   automerge:
-    needs: unittest
+    needs: createbranch
 
     runs-on: ubuntu-latest
 

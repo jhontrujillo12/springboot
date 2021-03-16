@@ -30,6 +30,6 @@ jobs:
   unittest:
 
     steps:
-      uses: actions/checkout@v2
     - name: unittest
+      uses: actions/checkout@v2
     - run: ./gradlew clean test --info

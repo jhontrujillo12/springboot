@@ -55,8 +55,7 @@ jobs:
 
     steps:
       - name: automerge
-        uses: peterjgrainger/action-create-branch@v2.0.1
+        uses: pascalgn/automerge-action@v0.13.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: 'release-notes'
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: "automerge,!work in progress"

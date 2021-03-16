@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
-      branding:
+    - branding:
         icon: 'award'
         color: 'green'
       uses: actions/setup-java@v1

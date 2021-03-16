@@ -27,6 +27,6 @@ jobs:
     - name: unittest
       run: ./gradlew clean test --info
 
-    branding:
-      icon: 'award'
-      color: 'green'
+  unittes:
+    - name: unittest
+      run: ./gradlew clean test --info

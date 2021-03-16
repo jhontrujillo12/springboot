@@ -7,7 +7,7 @@ on:
   push:
     branches: [develop]
   pull_request:
-    branches: [develop]
+    branches: [master]
 
 jobs:
   build:
@@ -40,10 +40,22 @@ jobs:
     - name: Validar resultado con errores
       if: ${{ failure() }}
       env:
-        MENSAJE_ERROR: Una o varias pruebas fallaron, NO se puede integrar a la rama develop
+        MENSAJE_ERROR: Una o varias pruebas fallaron, NO se puede integrar a la rama master
       run: echo "::set-output name=respuesta::${MENSAJE_ERROR}"
     - name: Validar resultado sin errores
       if: ${{ success() }}
       env:
         MENSAJE_EXITO: Todas las pruebas fueron exitosas
       run: echo "::set-output name=respuesta::${MENSAJE_EXITO}"
+
+  automerge:
+    needs: unittest
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: automerge
+        uses: "pascalgn/automerge-action@v0.13.1"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: "automerge,!work in progress"

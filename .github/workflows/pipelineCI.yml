@@ -17,9 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
-    branding:
-      icon: 'award'
-      color: 'green'
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
@@ -29,3 +26,7 @@ jobs:
       run: ./gradlew build
     - name: unittest
       run: ./gradlew clean test --info
+
+    branding:
+      icon: 'award'
+      color: 'green'

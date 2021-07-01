@@ -13,6 +13,7 @@ public void nada() {
 	
 }
 
+// Comentario para que muestre conflictos
 public class DemoApplication {
 
 	public void imprimir() {

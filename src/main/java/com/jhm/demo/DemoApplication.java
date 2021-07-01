@@ -19,11 +19,6 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	public void nada() {
-
-		System.out.println();	
-	}
-
 	public void imprimir() {
 		System.out.println("Imprime en consola");
 	}

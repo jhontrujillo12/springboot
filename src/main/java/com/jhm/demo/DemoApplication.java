@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Hago este comentario grande para especificar funcionalidades
  */
-public class nada() {
+public void nada() {
 	
 }
 

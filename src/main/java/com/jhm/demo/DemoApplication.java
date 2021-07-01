@@ -9,21 +9,23 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Hago este comentario grande para especificar funcionalidades
  */
-public void nada() {
-	
-}
 
 // Comentario para que muestre conflictos
 //Método encargado de hacer el demo de la aplicación
 public class DemoApplication {
 
-	public void imprimir() {
-		System.out.println("Imprime en consola");
-	}
-
 	public static void main(String[] args) {
 	    
 		SpringApplication.run(DemoApplication.class, args);
+	}
+
+	public void nada() {
+
+		System.out.println();	
+	}
+
+	public void imprimir() {
+		System.out.println("Imprime en consola");
 	}
 
 }

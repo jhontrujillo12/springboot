@@ -20,6 +20,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	//Metodo para imprimir
 	public void imprimir() {
 		System.out.println("Imprime en consola");
 	}

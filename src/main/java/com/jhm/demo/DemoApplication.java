@@ -14,6 +14,7 @@ public void nada() {
 }
 
 // Comentario para que muestre conflictos
+//Método encargado de hacer el demo de la aplicación
 public class DemoApplication {
 
 	public void imprimir() {

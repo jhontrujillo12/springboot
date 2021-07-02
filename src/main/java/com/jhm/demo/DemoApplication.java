@@ -15,7 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //Método encargado de hacer el demo de la aplicación
 public class DemoApplication {
 
-	//Prueba prueba
+	//Método principal
 	public static void main(String[] args) {
 	    	//Corre la aplicación
 		SpringApplication.run(DemoApplication.class, args);

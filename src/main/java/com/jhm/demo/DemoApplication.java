@@ -15,8 +15,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	// Método encargado de imprimir
-	//Agrego otro comentario
+	
 	public void imprimir() {
 		System.out.println("Imprime en consola");
 	}

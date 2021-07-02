@@ -22,7 +22,7 @@ public class DemoApplication {
 	}
 
 	// ejemplo de prueba de comentario
-	//se grega comentario de nada
+	//se grega COMENTARIO de nada
 	public void nada() {
 
 		System.out.println();	
